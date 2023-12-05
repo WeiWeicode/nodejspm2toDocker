@@ -1,0 +1,8 @@
+# docker-compose up -d
+version: '3.9'
+services:
+  test:
+    restart: always
+    build: ./nodepm2
+    ports:
+      - "5000:3001"
